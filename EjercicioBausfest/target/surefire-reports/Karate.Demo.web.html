@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>Karate.Demo.web</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">0</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">1</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2021-03-01 10:21:34 a.&nbsp;m.</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item failed">
+                        <a href="#[1:3]">[1:3] Agregar Item al carrito de compra </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">Karate/Demo/web.feature</span><span class="feature-description">web</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:3]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [1:3]</span><span class="scenario-name">Agregar Item al carrito de compra </span>
+                        </div>
+                        <div class="scenario-time failed">ms: 69377</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="1">
+                            <div class="step-ref passed">1</div>
+                            <div class="step-cell passed">Given driver 'https://www.demoblaze.com/'</div>
+                        </div>
+                        <div class="time-cell passed">41271</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">10:20:23.671 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:20:23.734 type was null, defaulting to 'chrome'</div>
+                    <div class="step-row">
+                        <div class="step-container" id="2">
+                            <div class="step-ref passed">2</div>
+                            <div class="step-cell passed">And driver.maximize()</div>
+                        </div>
+                        <div class="time-cell passed">752</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="3">
+                            <div class="step-ref passed">3</div>
+                            <div class="step-cell passed">And waitFor("{a}Sign up")</div>
+                        </div>
+                        <div class="time-cell passed">863</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">When click('a[id=login2]')</div>
+                        </div>
+                        <div class="time-cell passed">343</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">* delay(5000)</div>
+                        </div>
+                        <div class="time-cell passed">5083</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref failed">6</div>
+                            <div class="step-cell failed">And waitFor('//h5[text()="Sign up"]')</div>
+                        </div>
+                        <div class="time-cell failed">21065</div>
+                    </div>
+                    <div class="preformatted" data-parent="6">10:21:15.035 waitUntil (js) - retry #1
+10:21:21.057 waitUntil (js) - retry #2
+10:21:27.068 waitUntil (js) - retry #3
+10:21:33.081 waitUntil (js): failed after 3 retries and 21059 milliseconds
+web.feature:10 - evaluation (js) failed: waitFor('//h5[text()="Sign up"]'), java.lang.RuntimeException: waitUntil (js): failed after 3 retries and 21059 milliseconds
+stack trace: com.intuit.karate.driver.DriverOptions.retry(DriverOptions.java:489)</div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref skipped">7</div>
+                            <div class="step-cell skipped">* delay(5000)</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref skipped">8</div>
+                            <div class="step-cell skipped">And input('input[id="sign-username"]','cristhianc')</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="9">
+                            <div class="step-ref skipped">9</div>
+                            <div class="step-cell skipped">And input('input[id="sign-password"]','1234567')</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="10">
+                            <div class="step-ref skipped">10</div>
+                            <div class="step-cell skipped">* delay(5000)</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="11">
+                            <div class="step-ref skipped">11</div>
+                            <div class="step-cell skipped">And click('//button[text()="Sign up"]')</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="12">
+                            <div class="step-ref skipped">12</div>
+                            <div class="step-cell skipped">When click('{}Show Alert')</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="13">
+                            <div class="step-ref skipped">13</div>
+                            <div class="step-cell skipped">And dialog(true)</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="14">
+                            <div class="step-ref skipped">14</div>
+                            <div class="step-cell skipped">* delay(5000)</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="15">
+                            <div class="step-ref skipped">15</div>
+                            <div class="step-cell skipped">And click("{a}Laptops")</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="16">
+                            <div class="step-ref skipped">16</div>
+                            <div class="step-cell skipped">* delay(3000)</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="17">
+                            <div class="step-ref skipped">17</div>
+                            <div class="step-cell skipped">And click("{a}Sony vaio i5")</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="18">
+                            <div class="step-ref skipped">18</div>
+                            <div class="step-cell skipped">* delay(5000)</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="19">
+                            <div class="step-ref skipped">19</div>
+                            <div class="step-cell skipped">And click("{a}Add to cart")</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="20">
+                            <div class="step-ref skipped">20</div>
+                            <div class="step-cell skipped">* delay (5000)</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="21">
+                            <div class="step-ref skipped">21</div>
+                            <div class="step-cell skipped">And click("{a}Cart")</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="22">
+                            <div class="step-ref skipped">22</div>
+                            <div class="step-cell skipped">* delay (3000)</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="23">
+                            <div class="step-ref skipped">23</div>
+                            <div class="step-cell skipped">And click('//td[text()="Sony vaio i5"]')</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="24">
+                            <div class="step-ref skipped">24</div>
+                            <div class="step-cell skipped">* delay(5000)</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>
